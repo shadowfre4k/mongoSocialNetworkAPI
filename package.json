@@ -1,0 +1,20 @@
+{
+  "name": "mongosocialnetworkapi",
+  "version": "1.0.0",
+  "description": "Create an API for a social network backend using Mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowfre4k/mongoSocialNetworkAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadowfre4k/mongoSocialNetworkAPI/issues"
+  },
+  "homepage": "https://github.com/shadowfre4k/mongoSocialNetworkAPI#readme"
+}
