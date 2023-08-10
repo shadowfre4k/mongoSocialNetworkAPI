@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/shadowfre4k/mongoSocialNetworkAPI/issues"
   },
-  "homepage": "https://github.com/shadowfre4k/mongoSocialNetworkAPI#readme"
+  "homepage": "https://github.com/shadowfre4k/mongoSocialNetworkAPI#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
