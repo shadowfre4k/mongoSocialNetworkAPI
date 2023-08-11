@@ -11,6 +11,13 @@ const thoughSchema = new Schema({
     type: Date,
     default: () => Date.now(),
   },
-  username: {},
+  username: {
+    type: String,
+    require: true,
+  },
+  reactions: [],
 });
+
+const Thought = model("thought", thoughSchema);
+
 module.exports = Thought;
