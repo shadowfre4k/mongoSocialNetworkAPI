@@ -4,7 +4,7 @@ module.exports = {
   //get users
   async getUsers(req, res) {
     try {
-      const users = await User.findAll();
+      const users = await User.find();
       res.json(users);
     } catch (err) {
       res.status(500).json(err);
@@ -38,10 +38,11 @@ module.exports = {
   },
 
   // Post Update a user by id
-  async removeAssignment(req, res) {
+  async updateUser(req, res) {
     try {
       const user = await User.findOneAndUpdate(
         { _id: req.params.userId },
+        { $set: req.body },
         { runValidators: true, new: true }
       );
 
