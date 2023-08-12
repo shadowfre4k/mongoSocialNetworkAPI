@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-
+const Reaction = require("./Reaction");
 const thoughSchema = new Schema({
   thoughText: {
     type: String,
@@ -12,10 +12,10 @@ const thoughSchema = new Schema({
     default: () => Date.now(),
   },
   username: {
-    type: String,
+    type: Schema.Types.ObjectId,
     require: true,
   },
-  reactions: [],
+  reactions: [Reaction],
 });
 
 const Thought = model("thought", thoughSchema);
