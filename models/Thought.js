@@ -1,8 +1,8 @@
 const { Schema, model } = require("mongoose");
-const { Reaction } = require("./Reaction");
+const Reaction = require("./Reaction");
 const thoughSchema = new Schema(
   {
-    thoughText: {
+    thoughtText: {
       type: String,
       require: true,
       maxLength: 280,
@@ -13,7 +13,7 @@ const thoughSchema = new Schema(
       default: () => Date.now(),
     },
     username: {
-      type: Schema.Types.ObjectId,
+      type: String,
       require: true,
     },
     reactions: [Reaction.schema],

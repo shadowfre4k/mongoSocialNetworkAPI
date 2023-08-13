@@ -1,6 +1,7 @@
 const { User } = require("../models");
 
 module.exports = {
+  //add a friend
   async addFriend(req, res) {
     try {
       const friend = await User.findById({ _id: req.params.friendId });
@@ -16,11 +17,13 @@ module.exports = {
         });
       }
 
-      res.json("friend added");
+      res.json("friend added" + friend);
     } catch (err) {
       res.status(500).json(err);
     }
   },
+
+  //remove a friend
   async removeFriend(req, res) {
     try {
       const friend = await User.findById({ _id: req.params.friendId });
@@ -36,7 +39,7 @@ module.exports = {
         });
       }
 
-      res.json("friend deleted");
+      res.json("friend deleted" + friend);
     } catch (err) {
       res.status(500).json(err);
     }
