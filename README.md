@@ -75,7 +75,7 @@ The following screenshots detail and show the routes and what is executed when y
 
 Please watch the video linked to see how it works !
 
-    [insert video link]
+- https://drive.google.com/file/d/18M48moPzQvKv9igahd7eT-ewcSBxqknE/view
 
 ## Question
 
