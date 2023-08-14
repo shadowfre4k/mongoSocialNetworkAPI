@@ -113,7 +113,7 @@ module.exports = {
         { $push: { reactions: reaction._id } },
         { new: true }
       );
-      res.json(thought);
+      res.json(reaction);
     } catch (err) {
       res.status(500).json(err);
     }
